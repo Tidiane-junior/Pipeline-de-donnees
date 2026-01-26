@@ -39,3 +39,8 @@
 2026-01-23 17:54:58,286 - INFO - Data validation OK
 2026-01-23 17:54:58,286 - INFO - Calcul du chiffre d'affaires ok
 2026-01-23 17:54:58,286 - INFO - Pipeline fini avec succes
+2026-01-26 16:37:14,733 - INFO - Demarrage du pipeline
+2026-01-26 16:37:14,790 - INFO - Fichier bien lu (32 lignes)
+2026-01-26 16:37:14,792 - INFO - Data validation OK
+2026-01-26 16:37:14,793 - INFO - Calcul du chiffre d'affaires ok
+2026-01-26 16:37:14,809 - INFO - Pipeline fini avec succes
