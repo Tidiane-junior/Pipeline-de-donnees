@@ -33,7 +33,7 @@ def compute_revenue(df: pd.DataFrame) -> pd.DataFrame:
 # Fonction pour traiter un chunk de données
 def process_chunk(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Applique validation et transformation sur un chunk.
+    Applique validation et transformation sur chaque chunk.
     """
     from processor import validate_data, compute_revenue
 

@@ -30,10 +30,12 @@ def setup_logger():
     return logging.getLogger(__name__)
 
 
-# Fonction pour écrire un DataFrame au format Parquet
+# Fonction pour sauvegarder un DataFrame au format Parquet
 def write_parquet(df: pd.DataFrame, output_path: str):
     """
-    Écrit un DataFrame au format Parquet.
+    Écrit un DataFrame au format Parquet (compressé et optimisé).
+    En data engineering, on ne stocke presque jamais du CSV en sortie.
+
     """
     path = Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
