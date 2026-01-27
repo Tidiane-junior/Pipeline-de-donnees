@@ -63,7 +63,7 @@ def main():
         logger.info("Concatenation des chunks terminee")
 
         write_parquet(final_df, "data/processed/sales.parquet")
-        logger.info("Fichier Parquet écrit avec succes")
+        logger.info("Enregistrement avec succes du fichier Parquet")
 
         print(final_df)
 

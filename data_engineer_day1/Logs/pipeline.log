@@ -1,8 +1,8 @@
-2026-01-27 15:28:47,877 - INFO - Demarrage du pipeline batch
-2026-01-27 15:28:47,905 - INFO - Traitement d'un chunk de taille 10
-2026-01-27 15:28:47,924 - INFO - Traitement d'un chunk de taille 10
-2026-01-27 15:28:47,935 - INFO - Traitement d'un chunk de taille 10
-2026-01-27 15:28:47,944 - INFO - Traitement d'un chunk de taille 2
-2026-01-27 15:28:47,955 - INFO - Concatenation des chunks terminee
-2026-01-27 15:28:48,552 - INFO - Fichier Parquet écrit avec succes
-2026-01-27 15:28:48,662 - INFO - Pipeline batch termine avec succes
+2026-01-27 17:00:35,631 - INFO - Demarrage du pipeline batch
+2026-01-27 17:00:35,631 - INFO - Traitement d'un chunk de taille 10
+2026-01-27 17:00:35,643 - INFO - Traitement d'un chunk de taille 10
+2026-01-27 17:00:35,643 - INFO - Traitement d'un chunk de taille 10
+2026-01-27 17:00:35,643 - INFO - Traitement d'un chunk de taille 2
+2026-01-27 17:00:35,643 - INFO - Concatenation des chunks terminee
+2026-01-27 17:00:35,710 - INFO - Enregistrement avec succes du fichier Parquet
+2026-01-27 17:00:35,723 - INFO - Pipeline batch termine avec succes
