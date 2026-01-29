@@ -2,10 +2,11 @@
 #%% Utiser la fonction "load_csv" de ingestion.py pour charger les fichiers CSV
 from ingestion import load_csv
 from validation import validate_orders, validate_products, validate_customers
+from enrichir import enrich_sales
 
 #%% Fonction principale
 def main():
-    print("Debut du pipeline – Etape ingestion + validation")
+    print("Pipeline – Ingestion → Validation → Enrichissement")
 
     # Chemins des fichiers CSV
     path_orders = "D:\\Data_Engineer_Bootcamp\\Pipeline-de-donnees\\data_engineer_day2\\data\\raw\\orders.csv"
@@ -22,11 +23,12 @@ def main():
     products = validate_products(products)
     customers = validate_customers(customers)
 
-    # Afficher les résultats
-    print("Fichiers chargés et validés avec succès")
-    print(f"Orders: {orders.shape}")
-    print(f"Products: {products.shape}")
-    print(f"Customers: {customers.shape}")
+
+    sales = enrich_sales(orders, products, customers)
+
+    print("✅ Pipeline terminé")
+    print(sales.head())
+    print(f"Dataset final : {sales.shape}")
 
 
 if __name__ == "__main__":
