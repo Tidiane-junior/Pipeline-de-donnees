@@ -102,7 +102,7 @@ data_engineer_day3/
 * Calcul du chiffre d’affaires (`revenue`)
 * Sélection des colonnes utiles
 
-### 4️⃣ Persistance (persistence.py)
+### 4️⃣ Golden layer (golden.py)
 
 * Écriture des données propres dans data/processed/
 * Création automatique des dossiers
