@@ -1,6 +1,6 @@
-# 🏗️ Data Engineer Bootcamp – Jour 3
+# 🏗️ Consultant Data Engineer
 
-## 🎯 Objectif du jour
+## 🎯 Objectif
 
 Construire un **pipeline data complet et structuré** permettant de transformer des données brutes e-commerce en un dataset analytique exploitable.
 
