@@ -3,7 +3,7 @@
 from ingestion import load_csv
 from validation import validate_orders, validate_products, validate_customers
 from enrichir import enrich_sales
-
+from golden import save_dataframe
 #%% Fonction principale
 def main():
     print("Pipeline – Ingestion → Validation → Enrichissement")
@@ -25,6 +25,11 @@ def main():
 
 
     sales = enrich_sales(orders, products, customers)
+
+    save_dataframe(
+        sales,
+        "data/processed/golden.parquet"
+    )
 
     print("✅ Pipeline terminé")
     print(sales.head())
