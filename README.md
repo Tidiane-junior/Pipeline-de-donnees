@@ -1,13 +1,123 @@
-# Data Engineer
+<<<<<<< HEAD
+# 🏗️ Data Engineer Bootcamp 
 
-## Objectif
-Pipeline simple de traitement de ventes :
-- Chargement CSV
-- Validation
-- Calcul du chiffre d'affaires
-- Logging
+## 🎯 Objectif
 
-## Lancer le projet
+Construire un **pipeline data complet et structuré**, permettant de transformer des données brutes e-commerce en un dataset analytique exploitable.
+
+Je suis en **mission de consultant Data Engineer** : ingestion, validation, enrichissement.
+=======
+# 🏗️ Consultant Data Engineer
+
+## 🎯 Objectif
+
+Construire un **pipeline data complet et structuré** permettant de transformer des données brutes e-commerce en un dataset analytique exploitable.
+
+Nous sommes en **mission de consultant Data Engineer** : ingestion, validation, enrichissement.
+>>>>>>> 9c537ecea27e06d14aa5cdd805ddad6cbbf75f2f
+
+---
+
+## 🧠 Cas métier
+
+Nous travaillons sur un cas **e-commerce** avec :
+
+* des commandes clients
+* un référentiel produits
+* un référentiel clients
+
+L’objectif est de produire une table finale de ventes enrichies, prête pour :
+
+* la BI
+* un data warehouse
+* des analyses business
+
+---
+
+## 📁 Structure du projet
+
+```
+data_engineer_day3/
+├── src/
+│   ├── main.py          # Orchestration du pipeline
+│   ├── ingestion.py    # Chargement des données brutes
+│   ├── validation.py   # Règles de qualité et validation
+│   └── enrichment.py  # Jointures et calculs business
+│
+├── data/
+│   ├── raw/            # Données brutes (non modifiées)
+│   │   ├── orders.csv
+│   │   ├── products.csv
+│   │   └── customers.csv
+│   └── processed/      # Données transformées (étape suivante)
+│
+└── README.md
+```
+
+👉 **Règle Data Engineer** : le dossier `raw/` est immuable.
+
+---
+
+## 🗂️ Schéma des données
+
+### 📦 orders.csv (table de faits)
+
+| Colonne     | Description          |
+| ----------- | -------------------- |
+| order_id    | Identifiant commande |
+| order_date  | Date de commande     |
+| customer_id | Identifiant client   |
+| product_id  | Identifiant produit  |
+| quantity    | Quantité             |
+| unit_price  | Prix unitaire        |
+
+### 🛍️ products.csv (dimension produit)
+
+| Colonne      | Description         |
+| ------------ | ------------------- |
+| product_id   | Identifiant produit |
+| product_name | Nom                 |
+| category     | Catégorie           |
+| weight_kg    | Poids               |
+| price        | Prix catalogue      |
+
+### 👤 customers.csv (dimension client)
+
+| Colonne       | Description        |
+| ------------- | ------------------ |
+| customer_id   | Identifiant client |
+| customer_name | Nom                |
+| country       | Pays               |
+| signup_date   | Date d’inscription |
+
+---
+
+## 🔄 Étapes du pipeline
+
+### 1️⃣ Ingestion (`ingestion.py`)
+
+* Chargement des fichiers CSV depuis `data/raw/`
+* Vérification de l’existence des fichiers
+* Aucune transformation appliquée
+
+### 2️⃣ Validation (`validation.py`)
+
+* Vérification du schéma attendu
+* Suppression des valeurs invalides
+* Application des règles métier (quantité, prix, unicité)
+
+### 3️⃣ Enrichissement (`enrichment.py`)
+
+* Jointure orders ↔ products ↔ customers
+* Calcul du chiffre d’affaires (`revenue`)
+* Sélection des colonnes utiles
+
+---
+
+## ▶️ Exécution du pipeline
+
+Depuis la racine du projet :
+
 ```bash
 python src/main.py
 ```
@@ -34,29 +144,8 @@ python src/main.py
 ---
 
 🚀 *Projet réalisé dans une logique entreprise, orientée production et passage à l’échelle.*
+<<<<<<< HEAD
+=======
 
 python src/main.py
-```
-
----
-
-## 🧑‍💼 Compétences démontrées
-
-* Structuration d’un projet data
-* Séparation des responsabilités
-* Qualité et fiabilité des données
-* Logique métier e-commerce
-* Bases solides du métier de **Data Engineer / Consultant data**
-
----
-
-## 🔜 Prochaines étapes
-
-* Étape 4 : persistance des données (`data/processed/`)
-* Ajout de logs structurés
-* Tests unitaires
-* Préparation Airflow / Spark
-
----
-
-🚀 *Projet réalisé dans une logique entreprise, orientée production et passage à l’échelle.*
+>>>>>>> 9c537ecea27e06d14aa5cdd805ddad6cbbf75f2f
