@@ -8,7 +8,7 @@ from processor import validate_data, compute_revenue
 #     logger = setup_logger()
 #     logger.info("Demarrage du pipeline")
 
-    # INPUT_PATH = "D:\\Data_Engineer_Bootcamp\\data_engineer_day1\\data\\raw_sales.csv"
+    # INPUT_PATH = "D:\\Data_Engineer_Bootcamp\\data_engineer_1\\data\\raw_sales.csv"
 
 #     try:
 #     # Traitement complet    
@@ -50,7 +50,7 @@ def main():
     logger.info("Demarrage du pipeline batch")
 
     processed_chunks = []
-    chemin = "D:\\Data_Engineer_Bootcamp\\data_engineer_day1\\data\\raw_sales.csv"
+    chemin = "D:\\Data_Engineer_Bootcamp\\data_engineer_1\\data\\raw_sales.csv"
     
     try:
         for chunk in load_csv_in_chunks(chemin, chunksize=10):

@@ -102,6 +102,19 @@ data_engineer_day3/
 * Calcul du chiffre d’affaires (`revenue`)
 * Sélection des colonnes utiles
 
+### 4️⃣ Persistance (persistence.py)
+
+* Écriture des données propres dans data/processed/
+* Création automatique des dossiers
+* Dataset prêt pour BI / Warehouse
+
+### 5️⃣ Logs structurés (logger.py)
+
+* Logger centralisé pour le pipeline
+* Logs fichier + console
+* Horodatage, niveaux de logs, traçabilité complète
+* Gestion des erreurs avec stacktrace
+
 ---
 
 ## ▶️ Exécution du pipeline
@@ -121,15 +134,6 @@ python src/main.py
 * Qualité et fiabilité des données
 * Logique métier e-commerce
 * Bases solides du métier de **Data Engineer / Consultant data**
-
----
-
-## 🔜 Prochaines étapes
-
-* Étape 4 : persistance des données (`data/processed/`)
-* Ajout de logs structurés
-* Tests unitaires
-* Préparation Airflow / Spark
 
 ---
 

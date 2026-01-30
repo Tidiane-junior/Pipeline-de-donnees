@@ -13,9 +13,9 @@ def main():
     try:
 
         # Chemins des fichiers CSV
-        path_orders = "D:\\Data_Engineer_Bootcamp\\Pipeline-de-donnees\\data_engineer_day2\\data\\raw\\orders.csv"
-        path_products = "D:\\Data_Engineer_Bootcamp\\Pipeline-de-donnees\\data_engineer_day2\\data\\raw\\products.csv"
-        path_customers = "D:\\Data_Engineer_Bootcamp\\Pipeline-de-donnees\\data_engineer_day2\\data\\raw\\customers.csv"
+        path_orders = "D:\\Data_Engineer_Bootcamp\\Pipeline-de-donnees\\data_engineer_2\\data\\raw\\orders.csv"
+        path_products = "D:\\Data_Engineer_Bootcamp\\Pipeline-de-donnees\\data_engineer_2\\data\\raw\\products.csv"
+        path_customers = "D:\\Data_Engineer_Bootcamp\\Pipeline-de-donnees\\data_engineer_2\\data\\raw\\customers.csv"
 
         # Chargement des fichiers CSV
         orders = load_csv(path_orders)
