@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏗️ Data Engineer Bootcamp 
 
 ## 🎯 Objectif
@@ -6,15 +5,6 @@
 Construire un **pipeline data complet et structuré**, permettant de transformer des données brutes e-commerce en un dataset analytique exploitable.
 
 Je suis en **mission de consultant Data Engineer** : ingestion, validation, enrichissement.
-=======
-# 🏗️ Consultant Data Engineer
-
-## 🎯 Objectif
-
-Construire un **pipeline data complet et structuré** permettant de transformer des données brutes e-commerce en un dataset analytique exploitable.
-
-Nous sommes en **mission de consultant Data Engineer** : ingestion, validation, enrichissement.
->>>>>>> 9c537ecea27e06d14aa5cdd805ddad6cbbf75f2f
 
 ---
 
@@ -144,8 +134,3 @@ python src/main.py
 ---
 
 🚀 *Projet réalisé dans une logique entreprise, orientée production et passage à l’échelle.*
-<<<<<<< HEAD
-=======
-
-python src/main.py
->>>>>>> 9c537ecea27e06d14aa5cdd805ddad6cbbf75f2f
