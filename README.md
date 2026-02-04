@@ -144,7 +144,7 @@ Le projet inclut une suite de tests unitaires avec pytest afin de sécuriser cha
 L’exécution se fait via :
 
 '''bash
-  pytest
+pytest
 '''
 
 ## 🧑‍💼 Compétences démontrées
