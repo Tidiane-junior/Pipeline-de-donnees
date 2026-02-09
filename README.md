@@ -135,6 +135,8 @@ python src/main.py
 * Logique métier e-commerce
 * Bases solides du métier de **Data Engineer / Consultant data**
 
+
+
 ---
 
 🚀 *Projet réalisé dans une logique entreprise, orientée production et passage à l’échelle.*
