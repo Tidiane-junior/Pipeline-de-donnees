@@ -127,13 +127,34 @@ python src/main.py
 
 ---
 
+## 🧪 Tests unitaires
+
+Le projet inclut une suite de tests unitaires avec pytest afin de sécuriser chaque brique du pipeline.
+
+### Modules testés
+
+  - Ingestion des données (existence des fichiers, chargement CSV)
+  - Validation des règles métier
+  - Enrichissement et calcul du chiffre d’affaires
+  - Les tests permettent de :
+  - détecter rapidement les régressions
+  - fiabiliser le pipeline
+  - faciliter le refactoring
+
+L’exécution se fait via :
+
+'''bash
+pytest
+'''
+
 ## 🧑‍💼 Compétences démontrées
 
-* Structuration d’un projet data
-* Séparation des responsabilités
-* Qualité et fiabilité des données
-* Logique métier e-commerce
-* Bases solides du métier de **Data Engineer / Consultant data**
+ - Structuration d’un projet data
+ - Séparation des responsabilités
+ - Qualité et fiabilité des données
+ - Mise en place de logs structurés
+ - Tests unitaires avec pytest
+ - Bases solides du métier de Data Engineer / Consultant data
 
 
 
