@@ -1,63 +1,41 @@
 # -*- coding: utf-8 -*-
 #%% Utiser la fonction "load_csv" de ingestion.py pour charger les fichiers CSV
+from pathlib import Path
 from ingestion import load_csv
 from validation import validate_orders, validate_products, validate_customers
-from enrichir import enrich_sales
-from golden import save_dataframe
+from enrichment import enrich_sales  
+from golden import save_dataframe     # si tu as une fonction dédiée
 from logger import setup_logger
 #%% Fonction principale
-def main():
+def run_pipeline(project_root: Path) -> Path:
+    """
+    Lance le pipeline et retourne le chemin du fichier output.
+    """
     logger = setup_logger()
-    logger.info("Le pipeline commence.")
+    logger.info("START pipeline")
 
-    try:
+    raw_dir = project_root / "data" / "raw"
+    processed_dir = project_root / "data" / "processed"
+    processed_dir.mkdir(parents=True, exist_ok=True)
 
-        # Chemins des fichiers CSV
-        path_orders = "D:\\Data_Engineer_Bootcamp\\Pipeline-de-donnees\\data_engineer_2\\data\\raw\\orders.csv"
-        path_products = "D:\\Data_Engineer_Bootcamp\\Pipeline-de-donnees\\data_engineer_2\\data\\raw\\products.csv"
-        path_customers = "D:\\Data_Engineer_Bootcamp\\Pipeline-de-donnees\\data_engineer_2\\data\\raw\\customers.csv"
+    orders = load_csv(raw_dir / "orders.csv")
+    products = load_csv(raw_dir / "products.csv")
+    customers = load_csv(raw_dir / "customers.csv")
 
-        # Chargement des fichiers CSV
-        orders = load_csv(path_orders)
-        products = load_csv(path_products)
-        customers = load_csv(path_customers)
+    orders = validate_orders(orders)
+    products = validate_products(products)
+    customers = validate_customers(customers)
 
-        logger.info(
-            f"Table des commandes | orders={orders.shape}")
+    sales = enrich_sales(orders, products, customers)
 
-        logger.info(
-            f"Table des produits | products={products.shape}")
+    output_path = processed_dir / "new_golden.parquet"
+    sales.to_parquet(output_path, index=False)
 
-        logger.info(
-            f"Table des clients | customers={customers.shape}")
-
-        # Validation des données
-        orders = validate_orders(orders)
-        products = validate_products(products)
-        customers = validate_customers(customers)
-
-        logger.info("Data validation well done.")
-
-        # Enrichissement des données
-        sales = enrich_sales(orders, products, customers)
-        logger.info(f"Data enrichies | sales={sales.shape}")
-
-        save_dataframe(
-            sales,
-            "data/processed/sales.csv"
-        )
-
-        logger.info("Data well saved as sales.csv in data/processed.")
-
-    except Exception as e:
-        logger.error(f"Erreur dans le pipeline : {e}", exc_info=True)
-        raise
-
-    logger.info("Pipeline successfully finished.")
-
-    print(sales.head())
+    logger.info(f"END pipeline | output={output_path}")
+    return output_path
 
 if __name__ == "__main__":
-    main()
+    project_root = Path(__file__).resolve().parent.parent
+    run_pipeline(project_root)
 
 # %%

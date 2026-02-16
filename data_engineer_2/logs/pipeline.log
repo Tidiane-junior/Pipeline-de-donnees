@@ -1,0 +1,34 @@
+2026-02-16 14:06:43,966 | INFO | data_pipeline | Le pipeline commence.
+2026-02-16 14:06:44,227 | INFO | data_pipeline | Table des commandes | orders=(40, 6)
+2026-02-16 14:06:44,227 | INFO | data_pipeline | Table des produits | products=(31, 5)
+2026-02-16 14:06:44,227 | INFO | data_pipeline | Table des clients | customers=(20, 6)
+2026-02-16 14:06:44,293 | INFO | data_pipeline | Data validation well done.
+2026-02-16 14:06:44,317 | INFO | data_pipeline | Data enrichies | sales=(40, 11)
+2026-02-16 14:06:48,653 | INFO | data_pipeline | Data well saved as sales.parquet in data/processed.
+2026-02-16 14:06:48,653 | INFO | data_pipeline | Pipeline successfully finished.
+2026-02-16 14:11:40,202 | INFO | data_pipeline | Le pipeline commence.
+2026-02-16 14:11:40,227 | INFO | data_pipeline | Table des commandes | orders=(40, 6)
+2026-02-16 14:11:40,227 | INFO | data_pipeline | Table des produits | products=(31, 5)
+2026-02-16 14:11:40,227 | INFO | data_pipeline | Table des clients | customers=(20, 6)
+2026-02-16 14:11:40,273 | INFO | data_pipeline | Data validation well done.
+2026-02-16 14:11:40,282 | INFO | data_pipeline | Data enrichies | sales=(40, 11)
+2026-02-16 14:11:40,725 | INFO | data_pipeline | Data well saved as sales.parquet in data/processed.
+2026-02-16 14:11:40,725 | INFO | data_pipeline | Pipeline successfully finished.
+2026-02-16 14:13:14,687 | INFO | data_pipeline | Le pipeline commence.
+2026-02-16 14:13:14,713 | INFO | data_pipeline | Table des commandes | orders=(40, 6)
+2026-02-16 14:13:14,713 | INFO | data_pipeline | Table des produits | products=(31, 5)
+2026-02-16 14:13:14,713 | INFO | data_pipeline | Table des clients | customers=(20, 6)
+2026-02-16 14:13:14,727 | INFO | data_pipeline | Data validation well done.
+2026-02-16 14:13:14,749 | INFO | data_pipeline | Data enrichies | sales=(40, 11)
+2026-02-16 14:13:15,010 | INFO | data_pipeline | Data well saved as sales.parquet in data/processed.
+2026-02-16 14:13:15,010 | INFO | data_pipeline | Pipeline successfully finished.
+2026-02-16 14:14:47,869 | INFO | data_pipeline | Le pipeline commence.
+2026-02-16 14:14:47,886 | INFO | data_pipeline | Table des commandes | orders=(40, 6)
+2026-02-16 14:14:47,891 | INFO | data_pipeline | Table des produits | products=(31, 5)
+2026-02-16 14:14:47,891 | INFO | data_pipeline | Table des clients | customers=(20, 6)
+2026-02-16 14:14:47,905 | INFO | data_pipeline | Data validation well done.
+2026-02-16 14:14:47,923 | INFO | data_pipeline | Data enrichies | sales=(40, 11)
+2026-02-16 14:14:48,008 | INFO | data_pipeline | Data well saved as sales.parquet in data/processed.
+2026-02-16 14:14:48,008 | INFO | data_pipeline | Pipeline successfully finished.
+2026-02-16 17:08:34,795 | INFO | data_pipeline | START pipeline
+2026-02-16 17:08:35,117 | INFO | data_pipeline | END pipeline | output=D:\Data_Engineer_Bootcamp\Pipeline-de-donnees\data_engineer_2\data\processed\new_golden.parquet
