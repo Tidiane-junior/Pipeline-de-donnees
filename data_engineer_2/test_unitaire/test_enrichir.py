@@ -1,5 +1,5 @@
 import pandas as pd
-from enrichir import enrich_sales
+from enrichment import enrich_sales
 
 # tester les 
 def test_enrich_sales_computes_revenue():

@@ -1,7 +1,7 @@
 import pandas as pd
 from validation import validate_orders
 
-# Jutilise lamethode des a : arrangement, action, assertion (arrange, act, assert)
+# J'utilise la methode des trois "a" : arrangement, action, assertion (arrange, act, assert)
 def test_validate_orders_filters_invalid_rows():
     
     # 1. Arrange : je cree un DataFrame avec des lignes invalides
